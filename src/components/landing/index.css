@@ -1,0 +1,20 @@
+.card-1:hover .fa-icon {
+  color: white;
+  transition-duration: 0.5s;
+}
+#white_button:hover {
+  color: black;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  transition-timing-function: 'ease-in-out';
+}
+#white_button {
+  color: #949797;
+  background-color: #e1e7e7;
+  border-radius: 10%;
+  border-width: 12px;
+  font-weight: bold;
+}
+/* #white_button:hover {
+  background-color: black;
+} */

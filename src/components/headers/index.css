@@ -1,0 +1,12 @@
+#icon_socials:hover {
+    color: grey;
+    transform: scale(1.1);
+}
+
+.card-1:hover .fa-icon {
+    color: white;
+  }
+#white_button:hover {
+  color:black;
+  transform: scale(1.1);
+}

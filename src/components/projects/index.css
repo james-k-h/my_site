@@ -1,0 +1,35 @@
+.card-1:hover .fa-icon {
+  color: white;
+}
+#skill_icon:hover {
+  background-color: #e1e7e7;
+  transform: scale(1.1);
+}
+#skill_icon2:hover {
+  background-color: #e1e7e7;
+  transform: scale(1.1);
+}
+#white_button {
+  color: #949797;
+  background-color: #e1e7e7;
+  border-radius: 10%;
+  border-width: 12px;
+  font-weight: bold;
+}
+#project_img:hover {
+  background-color: #e1e7e7;
+  transform: scale(1.6);
+  /* transition: smooth; */
+  transition-duration: 0.5s;
+  z-index: 99 !important;
+}
+#arrow:hover {
+  color: #949797;
+  /* background-color: #e1e7e7; */
+  border-radius: 10%;
+  border-width: 2px;
+  font-weight: bold;
+}
+/* #white_button:hover {
+  background-color: black;
+} */
