@@ -13,6 +13,7 @@ import {
   StackDivider,
   Center,
   SimpleGrid,
+  Divider,
 } from '@chakra-ui/react';
 import { Card, CardBody, CardHeader, CardFooter } from '@chakra-ui/card';
 import FullScreenSection from './FullScreenSection';
@@ -216,25 +217,28 @@ const AboutMe = () => (
           full-stack development or engineering and project management.
           <br />
           <br />
+          <Divider />
+          <br />
           <b>Personally</b>
           <br />
+          <br />I have a broad array of interests, some of which include:
+          programming, history (predominantly European), global political
+          economy and international relations, traveling, long distance running
+          and skiing. Programming is the newest addition to the roster and is
+          something I've picked up approximately a year ago, but it has quickly
+          become a passion of mine.
           <br />
-          I have a broad array of interests, some of which include: programming,
-          history (predominantly European), global political economy and
-          international relations, traveling, long distance running and skiing.
-          Programming is the newest addition to the roster and is something I've
-          picked up approximately a year ago, but it has quickly become a
-          passion of mine.
           <br />
+          <Divider />
           <br />
           <b>Why Programming?</b>
           <br />
           <br />I was looking for a way to challenge myself and redefine my
           skillset and it fit the bill for a number of reasons. I think,
-          regardless of the trajectory of my career, its an invaluable skill to
+          regardless of the trajectory of my career, it's an invaluable skill to
           have and allows for a multitude of opportunities; by virtue of
           learning these skills you inevitably become more digitally literate.
-          Plus, without it I couldn't build this site!
+          Plus, without it I couldn't have built this site!
         </Text>
       </Box>
     </Box>

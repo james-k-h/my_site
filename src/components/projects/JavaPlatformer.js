@@ -19,24 +19,23 @@ import FullScreenSection from '../FullScreenSection';
 import ReactPlayer from 'react-player';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import under_con from '../../images/mern_dash.png';
-
+import under_con from '../../images/java_platformer.png';
 import wh_bg from '../../images/home_page6.jpg';
 
 import './index.css';
 
 const project_info = {
-  heading: 'ECommerce Dashboard',
-  short_desc: 'An interactive dashboard, designed for administrators.',
-  disc: `To see the app in action, make sure to click see it live below.`,
-  objective_1: `This project was designed as a way to synthesize E-Commerce information in a digestible format.`,
-  objective_2: `The app consists of a number of different views, showing transactional or aggregated sales data for a selection of`,
-  stack: 'Mongo, Express, React (CRA), Node.',
-  synopsis: 'Complete dashboard for enterprise level data insights.',
+  heading: 'Platformer PoC',
+  short_desc: 'PoC 2D Game',
+  //   disc: `To see the app in action, make sure to click see it live below.`,
+  objective_1: `This project was created to design and produce a PoC 2D game.`,
+  objective_2: `Using designed sprite sheets, the game renders a series of dynamic platform levels for the user to traverse.`,
+  stack: 'Java',
+  synopsis: 'Fun pirate-themed side scroller.',
 };
-function MernDash() {
-  const _live = `https://mern-client-dash.onrender.com`;
-  const _code = `https://github.com/james-k-h/mern_dash`;
+function JavaPlatformer() {
+  const _live = `https://code-editor-ten-steel.vercel.app/`;
+  const _code = `https://github.com/james-k-h/java_platformer`;
   const clickHandlerSeeItLive = () => {
     window.location.replace(_live);
   };
@@ -74,9 +73,11 @@ function MernDash() {
             borderColor={text_colour}
             id="project_img"
           />
-          <Text color={text_colour} padding="4px" textAlign="center">
+          <br />
+          <br />
+          {/* <Text color={text_colour} padding="4px" textAlign="center">
             {project_info.disc}
-          </Text>
+          </Text> */}
           <SimpleGrid
             color={text_colour}
             columns={[1, null, 2]}
@@ -117,15 +118,15 @@ function MernDash() {
               <Text fontWeight="bold">Synopsis</Text>
               <Divider></Divider>
               <Text py={2}>{project_info.synopsis}</Text>
-              <Link fontWeight="bold" href={_live} isExternal>
-                See it Live
-              </Link>{' '}
-              <FontAwesomeIcon
+              {/* <Link fontWeight="bold" href={_live} isExternal>
+                Watch a demo
+              </Link>{' '} */}
+              {/* <FontAwesomeIcon
                 icon={faArrowRight}
                 size="1x"
                 id="arrow"
                 onClick={() => clickHandlerSeeItLive()}
-              />
+              /> */}
             </GridItem>
           </SimpleGrid>
         </FullScreenSection>
@@ -134,4 +135,4 @@ function MernDash() {
     </ChakraProvider>
   );
 }
-export default MernDash;
+export default JavaPlatformer;

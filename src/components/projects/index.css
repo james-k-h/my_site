@@ -22,6 +22,7 @@
   /* transition: smooth; */
   transition-duration: 0.5s;
   z-index: 99 !important;
+  /* animation: fadeIn 0.5s; */
 }
 #arrow:hover {
   color: #949797;

@@ -8,6 +8,8 @@ import JobSearch from './JobSearch';
 import MernDash from './MernDash';
 import NextPropertyRental from './NextPropertyRental';
 import Communities from './Communities';
+import CodeEditor from './CodeEditor';
+import JavaPlatformer from './JavaPlatformer';
 
 export {
   BudgetTracker,
@@ -18,4 +20,6 @@ export {
   MernDash,
   NextPropertyRental,
   Communities,
+  CodeEditor,
+  JavaPlatformer,
 };

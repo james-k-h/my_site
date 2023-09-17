@@ -27,6 +27,9 @@ const Card = ({ title, description, imageSrc, see_more }) => {
         borderRadius="15px"
         height="100%"
         width="100%"
+        // height="400px"
+        // width="100%"
+        maxHeight="500px"
       />
       <VStack
         justifyContent="left"

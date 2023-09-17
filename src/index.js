@@ -10,6 +10,8 @@ import UkraineWar from './components/blog/UkraineWar';
 import Links from './screens/Links';
 
 import {
+  JavaPlatformer,
+  CodeEditor,
   BudgetTracker,
   MarsRover,
   AnimalApp,
@@ -38,6 +40,10 @@ const router = createBrowserRouter([
     element: <BudgetTracker />,
   },
   {
+    path: '/projects/code_editor',
+    element: <CodeEditor />,
+  },
+  {
     path: '/projects/mars_rover',
     element: <MarsRover />,
   },
@@ -48,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/ecommerce_poc',
     element: <ECommercePOC />,
+  },
+  {
+    path: '/projects/java_platformer',
+    element: <JavaPlatformer />,
   },
   {
     path: '/projects/job_search',

@@ -24,6 +24,12 @@ const projects = [
     see_more: '/projects/job_search',
   },
   {
+    title: 'Pirate Platformer',
+    description: 'Yaaarrr',
+    getImageSrc: () => require('../images/java_main_platformer.png'),
+    see_more: '/projects/java_platformer',
+  },
+  {
     title: 'Communities',
     description: 'Create and follow your favourite communities.  ',
     getImageSrc: () => require('../images/communities_project.jpg'),
@@ -42,19 +48,19 @@ const projects = [
     see_more: '/projects/ecommerce_poc',
   },
   {
+    title: 'Code Editor',
+    description: 'Code on the fly.  ',
+    getImageSrc: () => require('../images/code_edit.jpg'),
+    see_more: '/projects/code_editor',
+  },
+  {
     title: 'Animal Encyclopedia',
     description:
       'Handy guidebook featuring animal facts; categorized by continents and oceans.',
     getImageSrc: () => require('../images/animal_en.jpg'),
     see_more: '/projects/animal_app',
   },
-  {
-    title: 'NASA Mars Rover',
-    description:
-      "A simple web-app that tracks the progress of NASA's Mars Rovers.",
-    getImageSrc: () => require('../images/mars.nasa.jpg'),
-    see_more: '/projects/mars_rover',
-  },
+
   // {
   //   title: "Restaurant Ordering Booker",
   //   description:
@@ -67,6 +73,13 @@ const projects = [
     description: 'Balance your budget, one entry at a time. ',
     getImageSrc: () => require('../images/budget.jpg'),
     see_more: '/projects/budget_tracker',
+  },
+  {
+    title: 'NASA Mars Rover',
+    description:
+      "A simple web-app that tracks the progress of NASA's Mars Rovers.",
+    getImageSrc: () => require('../images/mars.nasa.jpg'),
+    see_more: '/projects/mars_rover',
   },
 
   //   {

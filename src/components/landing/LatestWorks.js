@@ -25,6 +25,8 @@ import budg_tracker from '../../images/budg_tracker_1.png';
 import admin_dash from '../../images/mern_dash.png';
 import next_property_rental from '../../images/next_property_rental.png';
 import communities from '../../images/communities.png';
+import code_editor from '../../images/code_editor.png';
+import java_platformer from '../../images/java_platformer.png';
 
 import wh_bg from '../../images/home_page9.jpg';
 
@@ -70,7 +72,7 @@ const LatestWorks = () => {
       click: '/projects/mern_dash',
     },
     {
-      title: 'Next.js E-Commerce integration with Stripe',
+      title: 'Next E-Commerce',
       text: 'E-Commerce PoC, a mock-up sneaker store.',
       image: sneaker,
       color: 'blackAlpha.700',
@@ -103,6 +105,20 @@ const LatestWorks = () => {
       image: communities,
       color: 'whiteAlpha.800',
       click: '/projects/communities',
+    },
+    {
+      title: 'Code Editor',
+      text: 'Code on the fly',
+      image: code_editor,
+      color: 'whiteAlpha.800',
+      click: '/projects/code_editor',
+    },
+    {
+      title: 'Java Platformer',
+      text: 'Pirate themed scroller',
+      image: java_platformer,
+      color: 'whiteAlpha.800',
+      click: '/projects/java_platformer',
     },
   ];
   return (
@@ -180,26 +196,37 @@ const LatestWorks = () => {
               backgroundImage={card.image}
             >
               {/* This is the block you need to change, to customize the caption */}
-              {/* <Container size="container.lg" height="600px" position="relative" >
-              <Stack
-                spacing={6}
-                w={'full'}
-                maxW={'lg'}
-                position="absolute"
-                top="50%"
-                transform="translate(0, -50%)"> */}
-              {/* <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} color={card.color}>
-                  {card.title}
-                </Heading> */}
-              {/* <Text fontSize={{ base: 'md', lg: 'lg' }}  color={card.color}>
-                  {card.text}
-                </Text> */}
-              {/* </Stack>
-            </Container> */}
+              {/* <Container size="container.lg" height="600px" position="relative">
+                <Stack
+                  spacing={6}
+                  w={'full'}
+                  maxW={'lg'}
+                  position="absolute"
+                  top="50%"
+                  transform="translate(0, -50%)"
+                >
+                  <Heading
+                    fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+                    color={card.color}
+                    backgroundColor="gray.400"
+                    opacity="90%"
+                    textAlign="center"
+                    borderRadius={30}
+                    borderWidth="8px"
+                    borderColor="gray.400"
+                  >
+                    {card.title}
+                  </Heading>
+                  <Text fontSize={{ base: 'md', lg: 'lg' }} color={card.color}>
+                    {card.text}
+                  </Text>
+                </Stack>
+              </Container> */}
             </Box>
           ))}
         </Slider>
       </Box>
+      <br />
     </FullScreenSection>
   );
 };
