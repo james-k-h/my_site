@@ -27,6 +27,7 @@ import next_property_rental from '../../images/next_property_rental.png';
 import communities from '../../images/communities.png';
 import code_editor from '../../images/code_editor.png';
 import java_platformer from '../../images/java_platformer.png';
+import my_blog from '../../images/my_blog.png';
 
 import wh_bg from '../../images/home_page9.jpg';
 
@@ -70,6 +71,13 @@ const LatestWorks = () => {
       image: next_property_rental,
       color: 'whiteAlpha.800',
       click: '/projects/mern_dash',
+    },
+    {
+      title: 'My Blog',
+      text: 'My thoughts....',
+      image: my_blog,
+      color: 'whiteAlpha.800',
+      click: '/projects/my_blog',
     },
     {
       title: 'Next E-Commerce',

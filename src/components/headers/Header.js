@@ -92,10 +92,11 @@ const Header = () => {
                 About
               </Link>
               <Link
-                href="/blog"
+                href="https://my-blog-bice-sigma.vercel.app/"
                 textDecoration={'none'}
                 fontWeight="bold"
                 id="icon_socials"
+                isExternal
               >
                 Blog
               </Link>

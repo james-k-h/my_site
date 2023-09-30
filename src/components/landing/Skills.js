@@ -5,35 +5,35 @@ import {
   VStack,
   Text,
   Box,
-} from "@chakra-ui/react";
-import FullScreenSection from "../FullScreenSection";
-import Skillbar from "react-skillbars";
+} from '@chakra-ui/react';
+
+import Skillbar from 'react-skillbars';
 
 const Skills = () => {
   const front_end_skills = [
-    { type: "React", level: 95 },
-    { type: "Javascript", level: 95 },
-    { type: "HTML/CSS", level: 85 },
-    { type: "Tailwind", level: 85 },
+    { type: 'React', level: 95 },
+    { type: 'Javascript', level: 95 },
+    { type: 'HTML/CSS', level: 85 },
+    { type: 'Tailwind', level: 85 },
   ];
   const back_end_skills = [
-    { type: "Python", level: 90 },
-    { type: "Node", level: 90 },
-    { type: "Java", level: 70 },
-    { type: "Kotlin", level: 70 },
+    { type: 'Python', level: 90 },
+    { type: 'Node', level: 90 },
+    { type: 'Java', level: 70 },
+    { type: 'Kotlin', level: 70 },
   ];
   const colors = {
-    bar: "#3498db",
+    bar: '#3498db',
     title: {
-      text: "#fff",
-      background: "#2980b9",
+      text: '#fff',
+      background: '#2980b9',
     },
   };
   const colors2 = {
-    bar: "#2ecc71",
+    bar: '#2ecc71',
     title: {
-      text: "#fff",
-      background: "#27ae60",
+      text: '#fff',
+      background: '#27ae60',
     },
   };
   return (
@@ -62,13 +62,13 @@ const Skills = () => {
           <Text
             padding={4}
             fontWeight="bold"
-            fontSize={{ base: "12px", md: "15px", lg: "18px" }}
+            fontSize={{ base: '12px', md: '15px', lg: '18px' }}
           >
             Front-End Skills
           </Text>
           <Skillbar
             skills={front_end_skills}
-            height={"8vh"}
+            height={'8vh'}
             animationDelay={2000}
             animationDuration={5000}
             colors={colors}
@@ -78,13 +78,13 @@ const Skills = () => {
           <Text
             padding={4}
             fontWeight="bold"
-            fontSize={{ base: "12px", md: "15px", lg: "18px" }}
+            fontSize={{ base: '12px', md: '15px', lg: '18px' }}
           >
             Back-End Skills
           </Text>
           <Skillbar
             skills={back_end_skills}
-            height={"8vh"}
+            height={'8vh'}
             animationDelay={2000}
             animationDuration={5000}
             colors={colors2}

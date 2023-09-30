@@ -2,7 +2,6 @@ import { Heading, HStack, Image, Text, VStack, Link } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import './index.css';
 
@@ -25,11 +24,11 @@ const Card = ({ title, description, imageSrc, see_more }) => {
         src={imageSrc}
         alt={title}
         borderRadius="15px"
-        height="100%"
-        width="100%"
-        // height="400px"
+        // height="100%"
         // width="100%"
-        maxHeight="500px"
+        // height="400px"
+        width="100%"
+        maxHeight="400px"
       />
       <VStack
         justifyContent="left"

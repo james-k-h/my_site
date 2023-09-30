@@ -1,13 +1,6 @@
 import React from 'react';
 import FullScreenSection from './FullScreenSection';
-import {
-  Box,
-  GridItem,
-  Heading,
-  Link,
-  SimpleGrid,
-  Text,
-} from '@chakra-ui/react';
+import { GridItem, Heading, Link, SimpleGrid, Text } from '@chakra-ui/react';
 import Card from './Card';
 
 const projects = [
@@ -18,6 +11,12 @@ const projects = [
     see_more: '/projects/next_property_rental',
   },
   {
+    title: 'My Blog',
+    description: 'Sharing my thoughts, one post at a time',
+    getImageSrc: () => require('../images/blog_project_page2.jpg'),
+    see_more: '/projects/my_blog',
+  },
+  {
     title: 'Job Search App',
     description: 'A web app solution to help organize your job search.',
     getImageSrc: () => require('../images/job_search.jpg'),
@@ -25,7 +24,7 @@ const projects = [
   },
   {
     title: 'Pirate Platformer',
-    description: 'Yaaarrr',
+    description: 'Peak platforming.',
     getImageSrc: () => require('../images/java_main_platformer.png'),
     see_more: '/projects/java_platformer',
   },
@@ -56,7 +55,7 @@ const projects = [
   {
     title: 'Animal Encyclopedia',
     description:
-      'Handy guidebook featuring animal facts; categorized by continents and oceans.',
+      'Handy animal fact guidebook categorized by continents and oceans.',
     getImageSrc: () => require('../images/animal_en.jpg'),
     see_more: '/projects/animal_app',
   },
@@ -74,13 +73,13 @@ const projects = [
     getImageSrc: () => require('../images/budget.jpg'),
     see_more: '/projects/budget_tracker',
   },
-  {
-    title: 'NASA Mars Rover',
-    description:
-      "A simple web-app that tracks the progress of NASA's Mars Rovers.",
-    getImageSrc: () => require('../images/mars.nasa.jpg'),
-    see_more: '/projects/mars_rover',
-  },
+  // {
+  //   title: 'NASA Mars Rover',
+  //   description:
+  //     "A simple web-app that tracks the progress of NASA's Mars Rovers.",
+  //   getImageSrc: () => require('../images/mars.nasa.jpg'),
+  //   see_more: '/projects/mars_rover',
+  // },
 
   //   {
   //   title: "Movie Reviewer",
@@ -106,13 +105,6 @@ const ProjectsSection = () => {
       <Heading py={6} as="h1" id="projects-section" fontSize={header_size}>
         Featured Projects
       </Heading>
-      {/* 
-      <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
-        fontSize={font_size}
-      > */}
       <SimpleGrid columns={[1, null, 2]} gap={8}>
         {projects.map((project) => (
           <GridItem key={project.title}>
@@ -125,7 +117,6 @@ const ProjectsSection = () => {
             />
           </GridItem>
         ))}
-        {/* </Box> */}
       </SimpleGrid>
     </FullScreenSection>
   );

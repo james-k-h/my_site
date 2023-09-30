@@ -43,27 +43,54 @@ const links_array = [
     see_more: 'https://www.bbc.com/news/world-60525350',
   },
 ];
-
+import wh_bg from '../../images/about_me_bg_3.jpg';
 function LinksDetail() {
   return (
     <FullScreenSection
-      backgroundColor="black"
-      isDarkBackground
-      p={20}
-      display="left"
+      // backgroundColor="black"
+      backgroundImage={wh_bg}
       width="100%"
+      p={20}
+      // display="left"
+      backgroundSize="cover"
     >
-      <VStack spacing={2} margin={3} display="left" width="100%" px={8}>
-        <Heading fontSize="18px" display="center" color="white">
+      {/* <br />
+      <br /> */}
+      <br />
+      <br />
+      <VStack spacing={2} margin={3} width="100%" py={6}>
+        <Heading fontSize="18px" display="center" color="whitesmoke">
           A List of Miscellaneous Links
         </Heading>
       </VStack>
 
-      <VStack spacing={8} margin={3} display="left" width="100%" p={10}>
+      <VStack
+        spacing={8}
+        margin={3}
+        display="left"
+        p={10}
+        color="white"
+        backgroundColor="blackAlpha.700"
+        padding={4}
+        borderRadius={15}
+        borderWidth="2px"
+        borderColor="gray.300"
+        width="90%"
+      >
         {links_array.map((item) => {
           return (
             <VStack fontStyle="italic" alignItems="right" key={item.Title}>
-              <Link href={item.see_more} isExternal fontWeight="bold">
+              <Link
+                href={item.see_more}
+                isExternal
+                fontWeight="bold"
+                _hover={{
+                  color: 'whiteAlpha.600',
+                  fontWeight: 'bold',
+                  textDecoration: 'underline',
+                  transitionDuration: '0.5s',
+                }}
+              >
                 {item.Title}
               </Link>
               <Text>{item.Subject}</Text>

@@ -13,13 +13,13 @@ import {
   JavaPlatformer,
   CodeEditor,
   BudgetTracker,
-  MarsRover,
   AnimalApp,
   ECommercePOC,
   JobSearch,
   MernDash,
   NextPropertyRental,
   Communities,
+  Blog,
 } from './components/projects/index';
 
 const router = createBrowserRouter([
@@ -44,16 +44,16 @@ const router = createBrowserRouter([
     element: <CodeEditor />,
   },
   {
-    path: '/projects/mars_rover',
-    element: <MarsRover />,
-  },
-  {
     path: '/projects/animal_app',
     element: <AnimalApp />,
   },
   {
     path: '/projects/ecommerce_poc',
     element: <ECommercePOC />,
+  },
+  {
+    path: '/projects/my_blog',
+    element: <Blog />,
   },
   {
     path: '/projects/java_platformer',

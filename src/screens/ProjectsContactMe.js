@@ -4,7 +4,6 @@ import Header from '../components/headers/Header';
 import Footer from '../components/Footer';
 // import Alert from "../components/Alert";
 import ProjectsSection from '../components/ProjectsSection';
-import ContactMeSection from '../components/ContactMeSection';
 
 function ProjectsContactMe() {
   return (
@@ -13,7 +12,6 @@ function ProjectsContactMe() {
       <main>
         <Header />
         <ProjectsSection />
-        {/* <ContactMeSection /> */}
         <Footer />
         {/* <Alert /> */}
       </main>

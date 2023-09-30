@@ -1,10 +1,7 @@
-import React from 'react';
 import {
   Heading,
   VStack,
   Text,
-  Image,
-  HStack,
   Box,
   Grid,
   GridItem,
@@ -14,12 +11,13 @@ import {
   Center,
   SimpleGrid,
   Divider,
+  Image,
 } from '@chakra-ui/react';
 import { Card, CardBody, CardHeader, CardFooter } from '@chakra-ui/card';
 import FullScreenSection from './FullScreenSection';
-import j_icon from '../images/j_icon.jpg';
-import wh_bg from '../images/home_page10.jpg';
-import Header from './headers/Header';
+import wh_bg from '../images/about_me_bg_1.jpg';
+// import wh_bg from '../images/home_page10.jpg';
+
 import james_about from '../images/james_about_me.jpg';
 import sql from '../images/skills/languages/sql.png';
 import java from '../images/skills/languages/java.png';
@@ -131,78 +129,51 @@ const skills_description_array = [
   {
     name: 'SQL',
     frameworks_libraries: `N/A `,
-    description: `Versed in databases and SQL, the two choices for personal builds are typically either Mongo or Postgres, depending on the chosen framework(s). `,
+    description: `Versed in databases and SQL, the two choices for personal builds are typically either Mongo or Postgres.`,
   },
 ];
 
-const font_size = { base: '12px', md: '14px', lg: '18px' };
+const font_size = { base: '12px', md: '14px', lg: '16px' };
 const header_size = { base: '12px', md: '18px', lg: '22px' };
 
 const AboutMe = () => (
   <FullScreenSection
-    // justifyContent="center"
-    // alignItems="center"
     backgroundImage={wh_bg}
-    // spacing={2}
     width="100%"
-    // height='80%'
     backgroundColor="#808888"
     flex={1}
-    // padding={4}
     color="gray.900"
     backgroundSize="cover"
   >
     <VStack py={20}>
       <Heading
-        // as="h2"
         id="about_me_headingh2"
         fontSize={header_size}
         fontStyle="italic"
         color="whiteAlpha.800"
-        // backgroundColor='blackAlpha.800'
-        // padding={2}
-        // margin={2}
-        // borderRadius={30}
-        // borderWidth='2px'
-        // borderColor='black'
       >
         A Little About Me...
       </Heading>
     </VStack>
-    <Box
-      display={{ md: 'flex' }}
-      // margin={4}
-      // spacing={2}
-      // alignItems="center"
-      // justifyContent="center"
-      width="90%"
-    >
+    <Box display={{ md: 'flex' }} width="95%">
       <Box flexShrink={0}>
         <Image
           src={james_about}
-          // width="100%"
-          // height="100%"
-          alt="test1"
-          // float="left"
-          // paddingLeft={6}
-          // borderColor="black"
-          borderRadius="20%"
+          alt="james"
+          borderRadius="15%"
           border="2px"
-          // borderWidth='4px'
           borderColor="gray.300"
         />
       </Box>
       <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
         <Text
-          px={4}
-          // fontSize="md"
+          px={2}
           whiteSpace="break-spaces"
-          // fontStyle="italic"
           backgroundColor="blackAlpha.800"
           color="whiteAlpha.700"
           padding={4}
           margin={4}
-          borderRadius={30}
+          borderRadius={15}
           borderWidth="2px"
           borderColor="gray.300"
           fontSize={font_size}
@@ -212,9 +183,9 @@ const AboutMe = () => (
           <br />
           I currently work in the IT sector, acting as part of the ITPMO for one
           of our large Canadian retailers. My day to day varies, often wearing a
-          number of different hats to help out the team, from acting as a tool
-          SME to automating processes programmatically. I'm interested in both
-          full-stack development or engineering and project management.
+          number of different hats to help out the team, from functioning as a
+          tool SME to automating processes programmatically. I'm interested in
+          both full-stack development or engineering and project management.
           <br />
           <br />
           <Divider />

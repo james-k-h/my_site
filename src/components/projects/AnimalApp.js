@@ -52,15 +52,15 @@ function AnimalApp() {
           <Heading color="gray.300">Animal Encyclopedia Overview</Heading>
           <SimpleGrid
             color="gray.300"
-            columns={[1, null, 3]}
-            gap={10}
+            columns={[1, null, 5]}
+            gap={4}
             py={4}
             width="90%"
           >
             <GridItem>
               <Image
                 src={animal_app_1}
-                // maxH="500px"
+                maxH="500px"
                 borderRadius={20}
                 border="4px"
                 borderColor="gray.300"
@@ -72,30 +72,7 @@ function AnimalApp() {
                 borderRadius={20}
                 border="4px"
                 borderColor="gray.300"
-              />
-            </GridItem>
-            <GridItem>
-              <Image
-                src={animal_app_3}
-                borderRadius={20}
-                border="4px"
-                borderColor="gray.300"
-              />
-            </GridItem>
-          </SimpleGrid>
-          <SimpleGrid
-            color="gray.300"
-            columns={[1, null, 3]}
-            gap={10}
-            py={4}
-            width="90%"
-          >
-            <GridItem>
-              <Image
-                src={animal_app_4}
-                borderRadius={20}
-                border="4px"
-                borderColor="gray.300"
+                maxH="500px"
               />
             </GridItem>
             <GridItem>
@@ -104,9 +81,35 @@ function AnimalApp() {
                 borderRadius={20}
                 border="4px"
                 borderColor="gray.300"
+                maxH="500px"
+              />
+            </GridItem>
+            <GridItem>
+              <Image
+                src={animal_app_4}
+                borderRadius={20}
+                border="4px"
+                borderColor="gray.300"
+                maxH="500px"
+              />
+            </GridItem>
+            <GridItem>
+              <Image
+                src={animal_app_3}
+                borderRadius={20}
+                border="4px"
+                borderColor="gray.300"
+                maxH="500px"
               />
             </GridItem>
           </SimpleGrid>
+          {/* <SimpleGrid
+            color="gray.300"
+            columns={[1, null, 3]}
+            gap={10}
+            py={4}
+            width="90%"
+          ></SimpleGrid> */}
           <Text color="gray.300" fontWeight="bold">
             These pictures show various screens and how the app leverages Redux.
           </Text>

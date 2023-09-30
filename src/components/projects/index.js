@@ -10,6 +10,7 @@ import NextPropertyRental from './NextPropertyRental';
 import Communities from './Communities';
 import CodeEditor from './CodeEditor';
 import JavaPlatformer from './JavaPlatformer';
+import Blog from './Blog';
 
 export {
   BudgetTracker,
@@ -22,4 +23,5 @@ export {
   Communities,
   CodeEditor,
   JavaPlatformer,
+  Blog,
 };

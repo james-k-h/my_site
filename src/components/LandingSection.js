@@ -1,17 +1,7 @@
-import React from 'react';
-import {
-  Avatar,
-  Heading,
-  VStack,
-  Box,
-  Text,
-  Link,
-  Image,
-} from '@chakra-ui/react';
+import { Heading, VStack, Box, Text, Link, Image } from '@chakra-ui/react';
 import FullScreenSection from './FullScreenSection';
 import james_avatar from '../images/james.jpg';
 import wh_bg from '../images/home_page4.jpg';
-import HalfScreenSection from './HalfScreenSection';
 
 const greeting = "Hello and Welcome - I'm James";
 
@@ -19,6 +9,7 @@ const bg_colour = 'blackAlpha.800';
 
 const font_size = { base: '16px', md: '18px', lg: '20px' };
 const header_size = { base: '18px', md: '20px', lg: '22px' };
+
 const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
@@ -33,11 +24,6 @@ const LandingSection = () => (
     color="white"
     backgroundSize="cover"
   >
-    {/* <br />
-    <br />
-    <br /> */}
-    {/* <br />
-    <br /> */}
     <br />
     <br />
     <br />
@@ -59,27 +45,15 @@ const LandingSection = () => (
         borderRadius={30}
         borderWidth="2px"
         padding={4}
+        width="60%"
       >
         {greeting}
         <br />
         <Text fontSize={font_size} fontStyle="oblique">
-          Mobile & Web Development | Project Management
+          Focus: Mobile & Web Development
         </Text>
       </Heading>
-      <Box></Box>
-      {/* <Text
-        width="60%"
-        spacing={2}
-        margin={2}
-        // fontStyle="italic"
-        whiteSpace="break-spaces"
-        fontSize={font_size}
-        fontWeight='bold'
-        shadow='2xl'
-
-      >
-        Mobile & Web Development | Project Management
-      </Text> */}
+      {/* <Box></Box> */}
       <Image
         name="james"
         src={james_avatar}
@@ -119,20 +93,6 @@ const LandingSection = () => (
         </Link>{' '}
         I've dabbled with over the last little while.{' '}
       </Text>
-      {/* <Text
-        width="60%"
-        spacing={2}
-        margin={2}
-        // fontStyle="italic"
-        whiteSpace="break-spaces"
-        fontSize={font_size}
-      >
-        Feel free to take a look at{" "}
-        <Link href="#projects" fontWeight="bold">
-          some of the projects
-        </Link>{" "}
-        I've dabbled with over the last little while.{" "}
-      </Text> */}
     </VStack>
   </FullScreenSection>
 );
